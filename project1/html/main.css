@@ -1,0 +1,212 @@
+body{margin: 0px;padding: 0px; font-family: "Century Gothic", Arial, sans-serif;}
+
+ul, li{list-style-type:none; margin: 0; padding:0; display: inline-block; text-align: center; margin-left: 20px;}
+
+li:hover{color:red; border-bottom: 2px solid red;}
+
+i{display: none !important; font-size: 40px !important; margin-top: 5px;margin-bottom: 5px;color: darkslategrey;}
+
+a{color: inherit; text-decoration: none;}
+
+li{line-height: 11vh;}
+
+.wrap-responsive{height: 100vh;}
+
+.intro-2 a:hover{color: darkgrey;}
+
+.colored{color: darkred;}
+
+.intro-2 a{color: grey;}
+
+.intro{
+    height: 15%;
+    padding-top: 90px;
+    font-weight: bold;
+    color: white;
+    background-image: url(../img/ss3.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left; 
+    text-align: center;
+    font-size: 50px;
+    margin: 0px;
+}
+
+nav{
+    height: 11vh;
+    background-color: white;
+    color: #969696; 
+
+}
+
+.popular-text{
+    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+    color: lightgrey;
+}
+
+.popular {
+   display: -webkit-flex;
+   display: flex;
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: space-around;
+   height: auto;
+   min-height: 39%;
+   flex-wrap: wrap;
+   background-image: url("../img/ss2.jpg"); /*might be better blank*/
+   background-position: bottom left;
+   background-repeat: no-repeat;
+}
+
+.popular-team {
+  height: 200px;
+  width: 230px;
+  background-color:;
+  margin: 10px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+  background-size: 150px 150px;
+  /* consider flex-shrink for mobile??? */
+
+}
+
+.popular-team:hover {
+
+}
+
+.logo{
+    position: relative;
+    top: 15px;
+    left: 0;
+}
+
+.intro-2{
+    height: 10vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: lightgrey;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 1em;
+    overflow: hidden;
+    min-width: 60%;
+
+}
+
+
+
+/* ===MEDIA QUERIES=== */
+@media screen and (max-width:1022px){
+    .intro{padding-top:50px; padding-bottom: 40px;}      
+}
+
+@media screen and (max-width: 850px){
+   .intro-2{font-size: .9em; height: auto;}
+}
+
+@media screen and (max-width: 740px){
+
+
+}
+
+@media screen and (max-width: 660px){
+  .intro-2{line-height: 1.4;}
+}
+
+
+@media screen and (max-width:530px){
+    .intro{padding-top:0px; padding-bottom: 90px;}
+    .logo{display: none;}
+    .list{margin-left: 5px;}
+
+}
+
+@media screen and (max-width:450px){
+    .menu-contain{display:inline-block !important;}
+    nav{text-align:center; height: auto;}
+    .list li{width: 100%; margin: 0px; padding: 0px;}
+    .list{display: none; margin: 0px; padding: 0px;}
+}
+
+@media screen and (max-width:363px){
+    .intro{font-size: 40px; padding-top: 50px; padding-bottom: 40px; margin-top: 10px;}
+    .popular-text{font-size: 30px; text-align: center;}
+
+}
+
+@media screen and (max-width: 340px){
+    .popular{}
+    .intro{font-size: 30px;}
+    .popular .popular-team{}
+}
+
+
+/* ===ANIMATED MOBILE MENU=== */
+.menu-contain {display: none;cursor: pointer;margin-top: 10px;}
+.bar1, .bar2, .bar3 {width: 35px;height: 5px;background-color: #333;margin: 6px;transition: 0.4s;}
+.change .bar1 {-webkit-transform: rotate(-45deg); translate(-9px, 6px);transform: rotate(-45deg) translate(-9px, 6px);}
+.change .bar2 {opacity: 0;}
+.change .bar3 {-webkit-transform: rotate(45deg) translate(-8px, -8px);transform: rotate(45deg) translate(-8px, -8px);}
+
+/* ===MOBILE STYLES=== */
+
+.show{
+    display: block !important;
+}
+
+/* ===PSEUDO CLASSES=== */
+
+.popular .popular-team:nth-child(1){
+    background-image: url("../img/fnatic-logo.png");
+
+}
+
+.popular .popular-team:nth-child(2){
+    background-image: url("../img/astralis-logo.png");
+}
+.popular .popular-team:nth-child(3){
+    background-image: url("../img/navi-logo.png");
+}
+.popular .popular-team:nth-child(4){
+    background-image: url("../img/nip-logo.png");
+}
+.popular .popular-team:nth-child(5){
+    background-image: url("../img/luminosity-logo.png");
+}
+.popular .popular-team:nth-child(6){
+    background-image: url("../img/nv-logo.png");
+}
+
+.popular .popular-team:nth-child(7){
+    background-image: url("../img/g2-logo.png");
+}
+
+.popular .popular-team:nth-child(8){
+    background-image: url("../img/cloud9-logo.png");
+}
+
+.popular .popular-team:nth-child(9){
+    background-image: url("../img/clg-logo.png");
+}
+.popular .popular-team:nth-child(10){
+    background-image: url("../img/flipside-logo.png");
+}
+.popular .popular-team:nth-child(11){
+    background-image: url("../img/optic-logo.png");
+}
+.popular .popular-team:nth-child(12){
+    background-image: url("../img/tempostorm-logo.png");
+}
+.popular .popular-team:nth-child(13){
+    background-image: url("../img/liquid-logo.png");
+}
+
+.popular .popular-team:nth-child(14){
+    background-image: url("../img/renegades-logo.png");
+}
