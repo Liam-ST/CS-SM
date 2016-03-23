@@ -4,11 +4,11 @@ a{text-decoration: inherit;color: inherit;cursor: auto;}
 p{display: inline-block;}
 
 .wrap-responsive{ height: 100vh;}
-.right-wrap{background-color: darkgrey; margin-left: 150px;}
+.right-wrap{background-color: lightgrey; margin-left: 9vw;}
 
 nav{
 	position: fixed;
-	max-width: 170px;
+	width: 9vw;
 	height: 100%;
 	background-color: lightgrey;
 	text-align: center;
@@ -24,7 +24,7 @@ nav{
 nav ul{width: 100%;}
 
 nav p:first-child{
-	margin-top: 70px;
+	margin-top: 50px;
 	font-size: 2.2em;
 }
 
@@ -33,13 +33,12 @@ nav ul:nth-child(n){
 }
 
 nav ul:nth-child(6){
-	margin-top: 150%;
+
 }
 
 nav ul:nth-child(n+6){
 	font-size: .7em;
 	color: rgb(150,150,150);
-	margin-top: 0 auto;
 	
 }
 
@@ -50,11 +49,15 @@ nav ul:nth-child(n+6):hover{
 
 .team{
 	width: 100%;
-	height: 300px;
-	margin-bottom: 100px;
-	background-color: black;
+	height: 55vh;
+	margin-bottom: 60px;
+	background-color: grey;
+	text-align: center;
 }
 
+.team .p1:first-child{
+	margin-left: 10px;
+}
 .team:last-child{
 	margin-bottom: 0;
 }
@@ -66,5 +69,39 @@ nav ul:nth-child(n+6):hover{
 	background-color: red;
 	top: 0px;
 	right: 0px;
+}
+
+
+
+.p1{
+	width: 18%;
+	height: 60%;
+	margin-top: 40px;
+	margin-right: 20px;
+	background-color: white;
+
+}
+
+.nav .p1:last-child{margin-right: 0px;}
+
+
+/* === TEAM ATTRIBUTES / STYLES === */
+
+.team-name{
+	font-size: 4em;
+	font-weight: bold;
+}
+
+.fnatic{
+	color: orange;
+}
+
+
+.flex-container{
+	display: flex;
+	height: 100%;
+	align-items: flex-start;
+	justify-content: space-around;
+	text-align: center;
 }
 

@@ -8,7 +8,6 @@ i{display: none !important; font-size: 40px !important; margin-top: 5px;margin-b
 
 a{color: inherit; text-decoration: none;}
 
-li{line-height: 11vh;}
 
 .wrap-responsive{height: 100vh;}
 
@@ -27,12 +26,12 @@ li{line-height: 11vh;}
     background-repeat: no-repeat;
     background-position: bottom left; 
     text-align: center;
-    font-size: 50px;
+    font-size: 5.5em;
     margin: 0px;
 }
 
 nav{
-    height: 11vh;
+    height: 82px;
     background-color: white;
     color: #969696; 
 
@@ -72,7 +71,6 @@ nav{
   -webkit-border-radius: 150px;
   border-radius: 150px;
   background-size: 150px 150px;
-  /* consider flex-shrink for mobile??? */
 
 }
 
@@ -102,29 +100,46 @@ nav{
 
 
 /* ===MEDIA QUERIES=== */
-@media screen and (max-width:1022px){
-    .intro{padding-top:50px; padding-bottom: 40px;}      
+@media screen and (max-width:1495px){
+   .intro{font-size: 3em;}
+}
+
+@media screen and (max-width: 1580px){
+  .intro{font-size: 2.9em;}
 }
 
 @media screen and (max-width: 850px){
    .intro-2{font-size: .9em; height: auto;}
+   .intro{padding-top: 40px; }
+}
+
+@media screen and (max-width: 767px){
+    .popular{background-image: none; background-color: #e1e1e1;}
 }
 
 @media screen and (max-width: 740px){
-
+  .intro-2{line-height: 3;}
+  .intro{padding-top: 30px; }
 
 }
 
-@media screen and (max-width: 660px){
-  .intro-2{line-height: 1.4;}
+@media screen and (max-width:600px){
+  .intro-2{line-height: 2;}
+  .intro{font-size: 1.8em;}
 }
-
 
 @media screen and (max-width:530px){
-    .intro{padding-top:0px; padding-bottom: 90px;}
     .logo{display: none;}
-    .list{margin-left: 5px;}
+    .list{margin-left: 0 auto; margin-top: 20px;}
+}
 
+@media screen and (max-width: 511px){
+    .intro{font-size: 1.3em;}
+
+}
+
+@media screen and (max-width: 460px){
+  .intro{padding-top: 0px; font-size: }
 }
 
 @media screen and (max-width:450px){
@@ -135,15 +150,11 @@ nav{
 }
 
 @media screen and (max-width:363px){
-    .intro{font-size: 40px; padding-top: 50px; padding-bottom: 40px; margin-top: 10px;}
     .popular-text{font-size: 30px; text-align: center;}
-
 }
 
 @media screen and (max-width: 340px){
-    .popular{}
-    .intro{font-size: 30px;}
-    .popular .popular-team{}
+
 }
 
 
@@ -164,7 +175,6 @@ nav{
 
 .popular .popular-team:nth-child(1){
     background-image: url("../img/fnatic-logo.png");
-
 }
 
 .popular .popular-team:nth-child(2){
