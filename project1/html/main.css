@@ -1,6 +1,8 @@
 body{margin: 0px;padding: 0px; font-family: "Century Gothic", Arial, sans-serif;}
 
-ul, li{list-style-type:none; margin: 0; padding:0; display: inline-block; text-align: center; margin-left: 20px;}
+ul, li{list-style-type:none; margin: 0; padding:0; display: inline-block; margin-left: 20px;}
+
+li{border-bottom: 2px solid white}
 
 li:hover{color:red; border-bottom: 2px solid red;}
 
@@ -31,10 +33,11 @@ a{color: inherit; text-decoration: none;}
 }
 
 nav{
-    height: 82px;
+
+    width: 100%;
     background-color: white;
     color: #969696; 
-
+    position: fixed;
 }
 
 .popular-text{
@@ -79,9 +82,7 @@ nav{
 }
 
 .logo{
-    position: relative;
-    top: 15px;
-    left: 0;
+
 }
 
 .intro-2{
