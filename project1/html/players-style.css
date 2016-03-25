@@ -113,22 +113,25 @@ nav img{
 
 .player p span{display: none;}
 
+
+
 .fa-steam-square{color: #424242;}
 .fa-steam-square:hover{color: #606060;}
 .fa-facebook-square{color: #3b5998;}
 .fa-facebook-square:hover{color: #5375bc;}
 .fa-twitter-square{color: #00aced;}
 .fa-twitter-square:hover{color: #2ac6ff;}
-.fa-twitch{color: #6441A5; font-size: 2.79em !important; margin-left: -4px;}
+.fa-twitch{color: #6441A5; font-size: 2.78em !important; margin-left: -3px;}
 .fa-twitch:hover{color: #8463c1;}
-
 
 
 #search{
     width: 100%;
     height: 15%;
+    margin-top: 10px;
     font-size: 3em;
-    font-family: 'Palanquin', sans-serif;
+    font-family: 'Oswald', sans-serif; 
+    text-transform: uppercase;
     text-transform: ;
     text-align: center;
     border: none;
@@ -138,6 +141,7 @@ nav img{
     -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+
 }
 
 #search input{
@@ -150,6 +154,7 @@ nav img{
   
 ::-webkit-input-placeholder {
    color: #e0e0e0;
+
 }
 
 :-moz-placeholder { /* Firefox 18- */
