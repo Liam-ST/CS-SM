@@ -20,13 +20,34 @@ $(document).ready(function() {
     });
     });
 
+    $(function () {
+  		$.scrollUp({
+    		scrollName: 'scrollUp',
+    		topDistance: '600', 
+    		topSpeed: 300, 
+    		animation: 'fade', 
+    		animationInSpeed: 200, // Animation in speed (ms)
+    		animationOutSpeed: 200, // Animation out speed (ms)
+    		scrollText: '', // Text for element
+
+        activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+ 		 });
+	});
 
     function myFunction(x) {x.classList.toggle("change");}
 
     $(function() {
-  	$('.fa-chevron-circle-down').click(function() {
-    $('.players-container').css('overflow', 'visible');
-    $('.fa-chevron-circle-down').css('display', 'none');
-  	});
-});
+      $('.fa-chevron-circle-down').click(function() {
+      $('.players-container').css('overflow', 'visible');
+      $('.fa-chevron-circle-down').css('display', 'none');
+      });
+    });
+
+    $(function() {
+      $('.chevron-2').click(function() {
+      $('.players-container').css('overflow', 'visible');
+      $('.chevron-2').css('right','99999');
+      });
+    });
+
 });
